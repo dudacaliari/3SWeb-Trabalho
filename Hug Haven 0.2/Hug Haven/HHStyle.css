@@ -1,0 +1,1166 @@
+body {
+    font-family: rubik;
+    background-color: #ffffff;
+    position: relative;
+}
+
+header {
+    background-color: #EECDEB;
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.Todos_ElementosHome {
+    position: relative;
+    margin-top: 0%;
+    min-height: 500px;
+    max-height: 100%;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/*Header*/
+
+.ItensHeader {
+    display: flex;
+    max-width: 70%;
+    margin-left: 17%;
+}
+
+.Pesquisa {
+    background-color: #ffffff;
+    width: 450px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 24px;
+    border: 0px solid #ffffff;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(93, 6, 106, 0.5));
+    filter: drop-shadow(1px 5px 5px rgba(93, 6, 106, 0.5));
+}
+
+#barra_pesq {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    outline: none;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    text-align: left;
+    font-family: rubik;
+    color: rgb(116, 116, 116);
+    margin-top: 3px;
+}
+
+#lupa {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 1.5px;
+}
+
+#perfil {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 23px;
+    margin-top: 23px;
+    margin-right: 15px;
+    margin-left: 100px;
+}
+
+#perfil:hover {
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(220, 179, 224));
+    filter: drop-shadow(1px 1px 1px rgb(117, 65, 116));
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#bag {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 23px;
+    margin-top: 23px;
+    margin-right: 100px;
+}
+
+#bag:hover {
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(220, 179, 224));
+    filter: drop-shadow(1px 1px 1px rgb(117, 65, 116));
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 12px;
+    margin-right: 96px;
+}
+
+/*Menu*/
+
+#Menu {
+    width: 100%;
+    background-color: #C9B1D8;
+    color: #ffffff;
+    font-family: rubik;
+    list-style-type: none;
+}
+
+.ItensMenu {
+    display: flex;
+    height: 40px;
+    padding: 6px;
+    margin-left: 31%;
+    white-space: nowrap;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#pedidos:hover {
+    color: #826C8F;
+}
+
+#cad_prod:hover {
+    color: #826C8F;
+}
+
+#recentes:hover {
+    color: #826C8F;
+}
+
+#recentes {
+    margin-left: 80px;
+}
+
+#cad_prod {
+    margin-left: 80px;
+}
+
+/*Cadastro*/
+
+.Cadastro {
+    display: none;
+    /*deixei off- completo*/
+    position: absolute;
+    font-family: rubik;
+    padding-top: 2%;
+    padding-left: 35%;
+}
+
+.Cadastro_fundo {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    border: 5px solid #f7f7fc;
+    background-color: #f7f7fc;
+    border-radius: 20px;
+    filter: blur(0.8px);
+    opacity: 0.9;
+}
+
+.info_cadastro {
+    display: flex;
+}
+
+.Cadastro_texto {
+    padding: 5%;
+    filter: blur(0px);
+    background-color: #EECDEB;
+    margin-left: 18.5%;
+    width: 330px;
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 15%;
+}
+
+#perfil_cadastro {
+    width: 27px;
+    height: 27px;
+}
+
+#titulo_cadastro {
+    color: #D5899BCC;
+    text-decoration: underline;
+    margin-left: 3%;
+    margin-bottom: 6%;
+}
+
+.Formulario_cadastro {
+    width: 200px;
+    height: 160px;
+}
+
+.Texto_cadastro {
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+#btn_cadastro {
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    border: 0px;
+    background-color: #D5899BCC;
+    color: rgb(255, 255, 255);
+}
+
+#btn_cadastro:hover {
+    background-color: #c9657dcc;
+}
+
+/*Recentes*/
+
+.Squish_recente {
+    background-color: #a2c3e0;
+    width: 165px;
+    height: 180px;
+    display: inline-block;
+    text-align: center;
+    margin: 15%;
+    margin-right: 2px;
+    border-radius: 17px;
+    margin-bottom: 100px;
+}
+
+.Acessados_recentemente::-webkit-scrollbar {
+    width: 20px;
+}
+
+.btn_addcarrinho_recente {
+    border: 0px;
+    border-radius: 50px;
+    background-color: #BCDCE9;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.btn_addcarrinho_recente:hover {
+    background-color: #a2c3e0;
+}
+
+.texto_prod_recente {
+    color: #5899d6;
+    margin-left: 10px;
+}
+
+/*Usuário*/
+
+.Usuario_posicao {
+    display: none;
+    /*deixei apagado*/
+    float: right;
+    height: 100%;
+    width: 30%;
+    border: 0px;
+}
+
+.Usuario {
+    background-color: #EECDEB;
+    height: 100%;
+    width: 30%;
+    min-width: 200px;
+    padding-right: 20px;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.Texto_usuario {
+    font-size: medium;
+    font-family: rubik;
+    margin-left: 10%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    padding-left: 20px;
+}
+
+#perfil_usuario {
+    font-family: rubik;
+    margin-top: 30px;
+    margin-left: 10%;
+    font-weight: bolder;
+    color: #D5899BCC;
+    margin-bottom: 40%;
+}
+
+#btn_editar {
+    margin-top: 20%;
+    justify-content: center;
+    background-color: #D5899BCC;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #ffffffcc;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 40%;
+    color: rgb(255, 255, 255);
+}
+
+/*Propaganda*/
+
+.Interno {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+#Card_Prop {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    left: 0px;
+    margin-top: 50px;
+    background: #BCDCE9;
+}
+
+#Prop {
+    box-sizing: border-box;
+    height: 250px;
+    top: 6px;
+    background: #FFFFFF;
+    border: 5px solid #BCDCE9;
+    border-radius: 30px;
+    margin-left: 16%;
+}
+
+/*Produtos*/
+
+.TodosSquishs {
+    width: 70%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+}
+
+.imagemSquish {
+    max-width: 160px;
+    max-height: 170px;
+    max-block-size: 80%;
+    margin-top: 12%;
+}
+
+.Squish {
+    background-color: #dfdfdf;
+    width: 165px;
+    height: 180px;
+    display: inline-block;
+    text-align: center;
+    margin: 3%;
+    margin-right: 2px;
+    border-radius: 17px;
+    margin-bottom: 100px;
+}
+
+.texto_prod {
+    color: #9f82b1;
+    text-align: center;
+    display: block;
+    line-height: 1px;
+
+}
+
+.nome {
+    font-family: rubik;
+}
+
+.valor {
+    font-family: rubik;
+}
+
+.bag_info {
+    display: flex;
+    margin-top: 25%;
+}
+
+.btn_addcarrinho {
+    border: 0px;
+    border-radius: 50px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.btn_addcarrinho:hover {
+    background-color: #f5e2f3;
+}
+
+.addBag {
+    width: 35px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #C9B1D8;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 0%;
+    font-family: rubik;
+    color: rgb(126, 80, 147);
+}
+
+.ItensFooter {
+    width: 90%;
+    height: 150px;
+    border-radius: 7px;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.LocalAtual {
+    color: #ffffff;
+    background-color: rgb(162, 119, 183);
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 2px;
+    margin-bottom: 10px;
+    padding-left: 2%;
+}
+
+.LinksFooter {
+    font-size: larger;
+}
+
+li:hover {
+    color: #ffffff;
+}
+
+/*Cadastro de produtos*/
+
+.Add_Produto {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    background: #BCDCE9;
+}
+
+.Todos_cadastro {
+    margin-top: 30px;
+}
+
+.Produto_cadastro {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background: #BCDCE9;
+    margin-bottom: 30px;
+}
+
+.Infos {
+    display: flex;
+    font-size: small;
+    font-family: rubik;
+    margin-top: 18px;
+    margin-left: 250px;
+    color: black;
+    width: 100%;
+}
+
+#imagem_produto {
+    background: #E4F1F6;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+#add_imagem {
+    width: 80px;
+    height: 80px;
+    margin-top: 55px;
+    margin-left: 55px;
+}
+
+.Add_informacoes {
+    display: flex;
+    padding: 2%;
+}
+
+.informacoes {
+    background-color: #BCDCE9;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.Titulo_informacoes {
+    height: 20px;
+    width: 150px;
+}
+
+.Add_codigo {
+    display: flex;
+    padding: 2%;
+    margin-top: 20px;
+    color: #39687a;
+}
+
+#barra_codigo {
+    border-radius: 20px;
+    width: 120px;
+    height: 25px;
+    border: 2px solid #80b1c4;
+    background-color: #80b1c4;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.Titulo_codigo {
+    height: 20px;
+    width: 65px;
+    margin-right: 75px;
+}
+
+#add_circle {
+    height: 25px;
+    width: 25px;
+}
+
+#add_item {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: #BCDCE9;
+    border: 0px;
+
+    margin-left: auto;
+    margin-top: 125px;
+    margin-right: 5%;
+
+}
+
+#add_circle:hover {
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(241, 238, 241));
+    filter: drop-shadow(1px 1px 1px rgb(51, 39, 122));
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#cadastrar_produto {
+    margin-left: 80px;
+    color: #826C8F;
+}
+
+#imagem_cadastro {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.Texto_informacoes {
+    height: 20px;
+    width: 150px;
+    color: #41658e;
+    font-weight: lighter;
+}
+
+.Texto_codigo {
+    color: #ffffff;
+    border-radius: 20px;
+    width: 120px;
+    height: 25px;
+    border: 2px solid #80b1c4;
+    background-color: #80b1c4;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#cadastro_prod {
+    color: #826C8F;
+    margin-left: 80px;
+}
+
+/*Carrinho*/
+
+.Carrinho_produtos {
+    width: 100%;
+    height: 200px;
+    left: 0px;
+    margin-top: 5%;
+    background: #BCDCE9;
+    padding: 13px;
+    padding-left: 12%;
+
+}
+
+.prod_carrinho {
+    display: flex;
+    height: 170px;
+    min-width: 600px;
+    max-width: 90%;
+    background-color: #e8eff2;
+    border-radius: 30px;
+}
+
+#excluir_item {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0px;
+    background-color: #e8eff2;
+    border: 0px;
+
+
+    margin-left: auto;
+    margin-top: 130px;
+    margin-right: 2%;
+}
+
+#close_circle:hover {
+    -webkit-filter: drop-shadow(1px 1px 1px rgb(80, 80, 80));
+    filter: drop-shadow(1px 1px 1px rgb(114, 114, 114));
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.Infos_carrinho {
+    font-family: rubik;
+    color: black;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.imagem_carrinho {
+    background-color: #95a9c4;
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+}
+
+.nome_carrinho {
+    font-weight: bold;
+}
+
+.valor_carrinho {
+    font-weight: bold;
+}
+
+.quantidade_carrinho {
+    background-color: #BCDCE9;
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    box-shadow: 1px 2px 5px #826C8F;
+}
+
+/*Essa vai ser a div pai dos produtos*/
+.todos_produtos {
+    height: 100%;
+    width: 100%;
+    margin-top: 146px;
+}
+
+.subtotal_carrinho {
+    font-family: rubik;
+    background-color: #dfdcdc;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 70%;
+    margin-bottom: 10%;
+}
+
+#titulosub_carrinho {
+    font-weight: bold;
+    text-align: center;
+}
+
+#totalsub_carrinho {
+    font-weight: bold;
+}
+
+#comprar_carrinho {
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 3%;
+    border: 0px;
+    background-color: #93abc7;
+    box-shadow: 1px 2px 5px #826C8F;
+    margin-left: 32%;
+}
+
+#comprar_carrinho:hover {
+    background-color: #93c7b3;
+}
+
+#Suporte{
+    display: none;
+}
+
+/*Pedidos*/
+
+.TodosSquishs_pedidos {
+    font-family: rubik;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.Squish_pedidos {
+    background-color: #D9D9D9;
+    padding: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 320px;
+    height: 470px;
+}
+
+.imagemSquish_pedidos {
+    height: 200px;
+    width: auto;
+    margin-left: 12%;
+}
+
+.nome_pedidos {
+    font-weight: bold;
+}
+
+.valor_pedidos {
+    font-weight: bold;
+}
+
+.quantidade_pedidos {
+    padding-top: 0.5%;
+    background-color: #e9bce4;
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    box-shadow: 1px 2px 5px #826C8F;
+}
+
+.Envio_pedidos {
+    margin-top: 28%;
+    display: flex;
+}
+
+.location_pedidos {
+    width: 22px;
+    height: 25px;
+    margin-left: 62%;
+}
+
+.TodosSquishs_pedidos::-webkit-scrollbar {
+    width: 20px;
+}
+
+#pedidos_pedidos {
+    color: #826C8F
+}
+
+@media only screen and (max-width: 500px){
+
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .Todos_ElementosHome {
+        min-height: 300px;
+        max-height: 100%;
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    /*Header*/
+
+    .ItensHeader {
+        max-width: 70%;
+        margin-left: 5%;
+    }
+
+    .Pesquisa {
+        height: 20px;
+        width: 120px;
+        padding: 0%;
+        margin-top: 20%;
+        margin-left: 12%;
+    }
+
+    #barra_pesq {
+        width: 90px;
+        height: 15px;
+        margin-top: 3px;
+        font-size: smaller;
+        margin-left: 2%;
+    }
+
+    #lupa {
+        width: 0px;
+        height: 0px;
+    }
+
+    #perfil {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 23px;
+        margin-top: 23px;
+        margin-right: 5%;
+        margin-left: 15%;
+    }
+
+    #bag {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 23px;
+        margin-top: 23px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 30%;
+        margin-right: 20%;
+    }
+
+    /*Menu*/
+
+    .ItensMenu {
+        display: inline;
+        font-size: 12px;
+    }
+
+    #pedidos{
+        margin-left: 5%;
+    }
+
+    #recentes {
+        margin-left: 5%;
+    }
+
+    #cad_prod {
+        margin-left: 5%;
+    }
+
+    /*Cadastro*/
+
+    .Cadastro {
+        padding-top: 5%;
+        padding-left: 8%;
+    }
+
+    .Cadastro_fundo {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+    }
+
+    .Cadastro_texto {
+        padding: 5%;
+        margin-left: 13%;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+
+    #perfil_cadastro {
+        width: 18px;
+        height: 18px;
+    }
+
+    #titulo_cadastro {
+        margin-left: 3%;
+        margin-bottom: 6%;
+        font-size: 16px;
+    }
+
+    .Formulario_cadastro {
+        width: 200px;
+        height: 40px;
+    }
+
+    .Texto_cadastro {
+        border-radius: 20px;
+        border: 1px solid white;
+        margin-bottom: 4%;
+        padding: 2px;
+        width: 170px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    #btn_cadastro {
+        border-radius: 10px;
+        text-align: center;
+        width: 170px;
+        font-size: 13px;
+        margin-top: 80px;
+    }
+
+    /*Recentes*/
+
+    .Acessados_recentemente {
+        display: none;
+        background-color: #BCDCE9;
+        width: max-content;
+        height: 100%;
+        position: absolute;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow-y: scroll;
+        z-index: 9999;
+    }
+
+    .Squish_recente {
+        background-color: #a2c3e0;
+        width: 110px;
+        height: 120px;
+        display: inline-block;
+        text-align: center;
+        margin: 15%;
+        margin-bottom: 40%;
+    }
+
+    .btn_addcarrinho_recente {
+        border: 0px;
+        border-radius: 50px;
+        background-color: #BCDCE9;
+        width: 35px;
+        height: 35px;
+        padding: 2%;
+        margin-right: 2%;
+
+    }
+
+    /*Usuário*/
+
+    .Usuario_posicao {
+        width: 65%;
+    }
+
+    #btn_editar {
+        margin-left: 30%;
+    }
+
+    /*Propaganda*/
+
+    #Card_Prop {
+        display: flex;
+        width: 300px;
+        height: 80px;
+        left: 0px;
+        margin-top: 10%;
+        background: #BCDCE9;
+    }
+
+    #Prop {
+        box-sizing: border-box;
+        height: 80px;
+        top: 6px;
+        background: #FFFFFF;
+        border: 5px solid #BCDCE9;
+        border-radius: 30px;
+        margin-left: 5%;
+        width: 270px;
+    }
+
+    #ocean{
+        width: 250px;
+    }
+
+    /*Produtos*/
+
+    .TodosSquishs {
+        width: 90%;
+        margin-top: 10%; 
+    }
+
+    .Squish {
+        width: 110px;
+        height: 120px; 
+    }
+
+    .nome {
+        font-family: rubik;
+        font-size: 15px;
+    }
+
+    .valor {
+        font-family: rubik;
+        font-size: 15px;
+    }
+
+    .bag_info {
+        display: flex;
+        margin-top: 25%;
+    }
+
+    .btn_addcarrinho {
+        border: 0px;
+        border-radius: 50px;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        padding: 0px;
+        margin-right: 2%;
+
+    }
+
+    .addBag {
+        width: 30px;
+    }
+
+    /*Cadastro de produtos*/
+
+    .Add_Produto {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-top: 10%;
+        background: #BCDCE9;
+    }
+
+    .Produto_cadastro {
+        height: 100px;
+    }
+
+    .Infos {
+        margin-top: 2%;
+        margin-left: 40%;
+        color: black;
+        width: 100%;
+    }
+
+    #imagem_produto {
+        height: 100px;
+        width: 100px;
+    }
+
+    #add_imagem {
+        width: 40px;
+        height: 40px;
+        margin-top: 30%;
+        margin-left: 30%;
+    }
+
+    .Add_informacoes {
+        display: flex;
+        padding: 2%;
+        
+    }
+
+    .Titulo_informacoes {
+        height: 2%;
+        width: 5%;
+      
+    }
+
+    .Add_codigo {
+        display: flex;
+        padding: 2%;
+        margin-top: 20px;
+        color: #39687a;
+    }
+
+    #barra_codigo {
+        border-radius: 20px;
+        width: 120px;
+        height: 25px;
+        border: 2px solid #80b1c4;
+        background-color: #80b1c4;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .Titulo_codigo {
+        height: 20px;
+        width: 65px;
+        margin-right: 75px;
+    }
+
+    #add_circle {
+        height: 25px;
+        width: 25px;
+    }
+
+    #add_item {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        background-color: #BCDCE9;
+        border: 0px;
+
+        margin-left: auto;
+        margin-top: 125px;
+        margin-right: 5%;
+
+    }
+
+    #add_circle:hover {
+        -webkit-filter: drop-shadow(1px 1px 1px rgb(241, 238, 241));
+        filter: drop-shadow(1px 1px 1px rgb(51, 39, 122));
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    #imagem_cadastro {
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+
+    .Texto_informacoes {
+        height: 10px;
+        width: 50px;
+        color: #41658e;
+        font-weight: lighter;
+        font-size: 1px;
+    }
+
+    .Texto_codigo {
+        color: #ffffff;
+        border-radius: 20px;
+        width: 120px;
+        height: 25px;
+        border: 2px solid #80b1c4;
+        background-color: #80b1c4;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    #cadastro_prod {
+        margin-left: 5%;
+    }
+
+}
